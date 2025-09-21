@@ -1,10 +1,11 @@
 import './App.css';
-import TabForm from './solutions/TabForm';
+import TabForms from './solutions/TabForms/TabForms';
 
 function App() {
   return (
    <div>
-    <TabForm />
+    <TabForms />
+
 
    </div>
   );

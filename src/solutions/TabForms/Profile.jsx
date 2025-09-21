@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TabForm = () => {
+const Profile = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const TabForm = () => {
   )
 }
 
-export default TabForm
+export default Profile
