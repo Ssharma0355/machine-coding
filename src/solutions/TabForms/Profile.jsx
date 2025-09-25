@@ -1,9 +1,18 @@
 import React from 'react'
 
-const Profile = () => {
+const Profile = ({data,setData}) => {
+  const {name, age, email} = data;
+  console.log(data)
   return (
     <div>
-    <h1>Profile</h1>  
+      <label>Name :</label>
+      <input type="text" onChange={(e)=> setData(e.target.value)} value={data.name} />
+       <label>age :</label>
+      <input type="text" onChange={(e)=> setData(e.target.value)} value={data.age} />
+       <label>email :</label>
+      <input type="text" onChange={(e)=> setData(e.target.value)} value={data.email} />
+
+
     </div>
   )
 }

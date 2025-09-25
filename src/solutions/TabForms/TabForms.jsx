@@ -5,6 +5,13 @@ import Settings from "./Settings";
 
 const TabForms = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const [data, setData] = useState({
+    name:"",
+    age:"",
+    email:"",
+    interset:[],
+    theme:""
+  })
   const Tabs = [
     {
       name: "Profile",
@@ -26,10 +33,10 @@ const TabForms = () => {
     <div>
       <h1>Tab Forms </h1>
       <div className="heading-container">
-          {Tabs.map((t, index) => <div onClick={()=> setActiveTab(index)} className="headings">{t.name}</div>)}
+          {Tabs.map((t, index) => <div key={index} onClick={()=> setActiveTab(index)} className="headings">{t.name}</div>)}
       </div>
 
-      <div className="tab-container"><ActiveComponent /></div>
+      <div className="tab-container"><ActiveComponent data={data} setData={setData} /></div>
       
     </div>
   );
