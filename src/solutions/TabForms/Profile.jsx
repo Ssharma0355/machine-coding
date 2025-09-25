@@ -2,17 +2,22 @@ import React from 'react'
 
 const Profile = ({data,setData}) => {
   const {name, age, email} = data;
+
+  const handleDatachange = (e, item)=>{
+    setData( prevState => ({
+      ...prevState,
+      [item]: e.target.value,
+    }))
+  }
   console.log(data)
   return (
     <div>
       <label>Name :</label>
-      <input type="text" onChange={(e)=> setData(e.target.value)} value={data.name} />
+      <input type="text" onChange={(e)=> handleDatachange(e, "name")}value={name} />
        <label>age :</label>
-      <input type="text" onChange={(e)=> setData(e.target.value)} value={data.age} />
+      <input type="text"  onChange={(e)=> handleDatachange(e, "age")} value={age} />
        <label>email :</label>
-      <input type="text" onChange={(e)=> setData(e.target.value)} value={data.email} />
-
-
+      <input type="text"  onChange={(e)=> handleDatachange(e, "email")} value={email} />
     </div>
   )
 }
