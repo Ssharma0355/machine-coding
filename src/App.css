@@ -8,3 +8,11 @@
    border: 1px solid black;
    border-radius: .5rem;
 }
+.tab-container{
+  display: flex;
+   border: 1px solid black;
+   border-radius: .5rem;
+   height: 100px;
+   margin: 2rem;
+   padding: 1rem;
+}
