@@ -21,6 +21,7 @@ const TabForms = () => {
   return (
     <div>
       <h1>Tab Forms </h1>
+      {Tabs.map(t => <div>{t.name}</div>)}
       
     </div>
   );
