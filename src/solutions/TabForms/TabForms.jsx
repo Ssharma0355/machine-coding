@@ -9,7 +9,7 @@ const TabForms = () => {
     name:"",
     age:"",
     email:"",
-    interset:[],
+    interset:["coding", "DSA"],
     theme:""
   })
   const Tabs = [

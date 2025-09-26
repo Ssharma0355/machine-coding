@@ -16,3 +16,8 @@
    margin: 2rem;
    padding: 1rem;
 }
+.interset-conatiner{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
