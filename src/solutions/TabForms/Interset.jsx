@@ -8,9 +8,13 @@ const Interset = ({data, setData}) => {
         Coding
         <input type="checkbox" name="coding" checked={interset.includes("coding")} />
       </label>
-       <label htmlFor="">
+            <label htmlFor="">
         DSA
-        <input type="checkbox" name="" id="" />
+        <input type="checkbox" name="DSA" checked={interset.includes("DSA")} />
+      </label>
+             <label htmlFor="">
+        DSA
+        <input type="checkbox" name="DSA" checked={interset.includes("DSA")} />
       </label>
     </div>
   )
