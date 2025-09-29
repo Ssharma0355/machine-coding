@@ -29,6 +29,10 @@ const TabForms = () => {
       name: "Settings",
       component: Settings,
     },
+        {
+      name: "Settings",
+      component: Settings,
+    },
   ];
 
   const ActiveComponent = Tabs[activeTab].component;
