@@ -21,6 +21,10 @@ const TabForms = () => {
       name: "Interest",
       component: Interset,
     },
+       {
+      name: "Interest",
+      component: Interset,
+    },
     {
       name: "Settings",
       component: Settings,
